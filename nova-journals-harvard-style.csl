@@ -36,7 +36,6 @@
   <macro name="author">
     <names variable="author" et-al-min="7" et-al-use-first="6" delimiter=", " delimiter-precedes-last="never">
       <name name-as-sort-order="all" sort-separator=" " initialize-with="" delimiter=", "/>
-      <et-al term="et-al"/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
@@ -47,7 +46,6 @@
   <macro name="author-short">
     <names variable="author" et-al-min="4" et-al-use-first="1" delimiter=", " delimiter-precedes-last="always">
       <name form="short" and="text"/>
-      <et-al term="et-al"/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
@@ -277,7 +275,7 @@
     </layout>
   </citation>
 
-  <bibliography hanging-indent="true" line-spacing="1">
+  <bibliography hanging-indent="true" line-spacing="1" et-al-min="7" et-al-use-first="6">
     <sort>
       <key macro="author"/>
       <key macro="issued-year"/>
