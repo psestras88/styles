@@ -29,9 +29,7 @@
       <term name="et-al">et al.</term>
       <term name="in">In</term>
       <term name="no date" form="short">n.d.</term>
-      <term name="available at">Available at</term>
-      <term name="accessed">Accessed</term>
-      <term name="page-range-delimiter">–</term>
+      <term name="range-delimiter">–</term>
     </terms>
   </locale>
 
@@ -123,10 +121,10 @@
       </if>
       <else-if variable="URL">
         <group delimiter=" ">
-          <text term="available at" text-case="capitalize-first" suffix=":"/>
+          <text value="Available at:"/>
           <text variable="URL"/>
           <group prefix="(" suffix=")">
-            <text term="accessed"/>
+            <text value="Accessed"/>
             <date variable="accessed" prefix=" ">
               <date-part name="day" form="numeric-leading-zeros" suffix=" "/>
               <date-part name="month" form="long" suffix=" "/>
